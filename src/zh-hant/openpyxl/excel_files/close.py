@@ -5,10 +5,10 @@ from openpyxl import Workbook, load_workbook
 w_workbook = Workbook(True)
 w_workbook.create_sheet()
 w_workbook['Sheet'].append(['Hello', 'World'])
-# 呼叫 close 方法之後，再次寫入一行資料，並儲存
+# 呼叫 close 方法之後，再次寫入一列資料，並儲存
 w_workbook.close()
 w_workbook['Sheet'].append(['你好', '世界'])
-w_workbook.save('w_close.xlsx')
+w_workbook.save('Close.xlsx')
 
 # 建立唯讀的活頁簿
 r_workbook = load_workbook('Hello.xlsx', True)

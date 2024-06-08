@@ -8,7 +8,7 @@ w_workbook['Sheet'].append(['Hello', 'World'])
 # 调用 close 方法之后，再次写入一行数据，并保存
 w_workbook.close()
 w_workbook['Sheet'].append(['你好', '世界'])
-w_workbook.save('w_close.xlsx')
+w_workbook.save('Close.xlsx')
 
 # 创建只读的工作簿
 r_workbook = load_workbook('Hello.xlsx', True)
