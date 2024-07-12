@@ -7,5 +7,5 @@ workbook = openpyxl.open('Hello.xlsx', True)
 worksheet = workbook['Class 1.1']
 worksheet.title = 'Class 1.2'
 
-# ERROR Read-only Workbook objects can't modify cell values.
+# ERROR Read-only Workbook objects can't modify cell values
 worksheet['A1'].value = 'A good man'
