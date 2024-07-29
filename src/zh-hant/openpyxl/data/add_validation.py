@@ -13,13 +13,13 @@ newDV = DataValidation(
     )
 ws.add_data_validation(newDV)
 
-# 為 D1:D2，D4:D5 兩個區域新增資料驗證，內容長度需要小於等於 5
+# 為 D1:D2，D4:D5 兩個範圍新增資料驗證，內容長度需要小於等於 5
 ws.data_validations.append(DataValidation(
     'textLength', 5,
     sqref=(CellRange('D1:D2'), CellRange('D4:D5')), operator='lessThanOrEqual'
     ))
 
-# 為 E1:E2，E4:E5 兩個區域新增資料驗證，小數需要大於 1.5
+# 為 E1:E2，E4:E5 兩個範圍新增資料驗證，小數需要大於 1.5
 ws.add_data_validation(DataValidation(
     'decimal', 1.5,
     sqref=MultiCellRange(['E1:E2', 'E4:E5']), operator='greaterThan'

@@ -4,7 +4,7 @@ wb = load_workbook('Data.xlsx')
 ws = wb['Trees']
 
 from openpyxl.worksheet.cell_range import CellRange
-# 建立區域 A1:B2
+# 建立範圍 A1:B2
 range = CellRange('A1:B2')
 
 # 借助 CellRange 的 row 屬性周遊儲存格

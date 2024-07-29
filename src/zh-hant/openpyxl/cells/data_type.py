@@ -7,7 +7,7 @@ worksheet = workbook['Types']
 def show(cell):
     print(f'{cell.data_type} {cell.value} {type(cell.value)}')
 
-# 顯示區域 A1:L1 中的儲存格的資訊
+# 顯示範圍 A1:L1 中的儲存格的資訊
 for row in worksheet['A1:L1']:
     for cell in row:
         show(cell)

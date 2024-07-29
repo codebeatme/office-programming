@@ -1,6 +1,6 @@
 from openpyxl.worksheet.cell_range import CellRange
 
-# 建立區域 B2:D4，然後判斷他與其他區域的關系
+# 建立範圍 B2:D4，然後判斷他與其他範圍的關系
 range = CellRange('B2:D4')
 print(f'B2:D4 與 A1:B2 的交集為空？{range.isdisjoint(CellRange("A1:B2"))}')
 print(f'B2:D4 與 F4:H5 的交集為空？{range.isdisjoint(CellRange("F4:H5"))}')

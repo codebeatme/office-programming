@@ -6,7 +6,7 @@ phones = workbook['Phones']
 # 取得儲存格 A1，C1
 print(phones.cell(1, 1))
 print(phones['C1'])
-# 取得第二和第四列之間，從第一欄開始至最大欄結束的區域內的儲存格
+# 取得第二和第四列之間，從第一欄開始至最大欄結束的範圍內的儲存格
 print(phones[2:4])
 
 cups = workbook['Cups']

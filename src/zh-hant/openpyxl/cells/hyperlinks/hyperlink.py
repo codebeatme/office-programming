@@ -3,7 +3,7 @@ import openpyxl
 wb = openpyxl.load_workbook('Link.xlsx')
 ws = wb['Hyperlinks']
 
-# 顯示區域 A1:A2 中的儲存格的連結
+# 顯示範圍 A1:A2 中的儲存格的連結
 for row in ws['A1:A2']:
     for cell in row:
         print(f'{cell.hyperlink}, {cell.hyperlink.target}')
