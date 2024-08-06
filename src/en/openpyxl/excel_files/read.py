@@ -5,7 +5,7 @@ from openpyxl import load_workbook
 # Read the Excel file
 workbook = load_workbook('Hello.xlsx')
 
-# Get cells A1, B1, C1, B4, C4 in Worksheet 1.1 and display them.
+# Get cells A1, B1, C1, B4, C4 in Worksheet 1.1 and display them
 worksheet = workbook['Class 1.1']
 name = worksheet['A1'].value
 age = worksheet['B1'].value
