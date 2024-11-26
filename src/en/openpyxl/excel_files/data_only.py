@@ -6,7 +6,7 @@ from openpyxl import load_workbook
 xlsx = open('Hello.xlsx', 'rb')
 workbook = load_workbook(xlsx, data_only=True)
 
-# Read and display the results of the formula in cells B4 and C4
+# Read and display the results of the formulas in cells B4 and C4
 worksheet = workbook['Class 1.1']
 avg_age = worksheet['B4'].value
 avg_score = worksheet['C4'].value
