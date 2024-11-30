@@ -18,13 +18,3 @@ worksheet = Workbook(True).create_sheet()
 worksheet.title = 'MySheet'
 # 通过 parent 属性获取工作表对应的工作簿对象
 worksheet.parent.save('Parent.xlsx')
-
-workbook = load_workbook('Goods.xlsx')
-protection = workbook['Flowers'].protection
-# 启用对工作表 Flowers 的保护
-protection.sheet = True
-# 允许用户在 Office 软件中删除行或列
-protection.deleteColumns = False
-protection.deleteRows = False
-workbook.save('Protection.xlsx')
-

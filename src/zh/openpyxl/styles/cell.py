@@ -21,5 +21,5 @@ wb.save('Cell.xlsx')
 
 # 可以修改字体颜色
 ws['A1'].font.color.rgb = 'FFFF00'
-# ERROR 不能直接修改具体样式
+# ERROR 不能直接修改具体格式
 ws['A1'].font.b = True
